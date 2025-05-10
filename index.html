@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nosso Amor</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #1a1a1a;
+      background-image: url('https://www.transparenttextures.com/patterns/hearts.png');
+      color: #f1f1f1;
+      background-repeat: repeat;
+    }
+    header {
+      background: linear-gradient(to right, #ff5e78, #c0392b);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3em;
+    }
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .slideshow-container {
+      position: relative;
+      max-width: 100%;
+      margin: auto;
+    }
+    .slide {
+      display: none;
+    }
+    .slide img {
+      width: 90%;
+      max-width: 500px;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+    }
+    .mensagem {
+      font-size: 1.3em;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .frases {
+      font-style: italic;
+      margin-top: 30px;
+    }
+    .data {
+      margin-top: 40px;
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #ffb6c1;
+    }
+    footer {
+      background: #c0392b;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Nosso Amor</h1>
+    <p>Para sempre  💖</p>
+  </header>
+
+  <section class="galeria">
+    <div class="slideshow-container">
+      <div class="slide">
+        <img src="imagens/euamomomo.jpg" alt="Foto 1">
+      </div>
+      <div class="slide">
+        <img src="imagens/euimomo.jpg" alt="Foto 2">
+      </div>
+      <div class="slide">
+        <img src="imagens/momoieu.jpg" alt="Foto 3">
+      </div>
+    </div>
+  </section>
+
+  <section class="mensagem">
+    <p>
+      Desde o dia em que nossos olhares se cruzaram, minha vida ganhou mais cor, mais sentido e muito mais amor. <br/>
+      Cada momento ao seu lado é um presente que guardo no coração. Te amo, hoje e sempre.
+    </p>
+    <div class="frases">
+      <p>"Você é o meu hoje, o meu amanhã e o meu sempre."</p>
+      <p>"Nosso amor é a melhor parte da minha vida."</p>
+      <p>"Com você, cada dia é um capítulo novo da nossa linda história."</p>
+      <p>"Amar você é fácil, te admirar é inevitável, estar com você é essencial."</p>
+    </div>
+    <div class="data">
+      💍 Nosso Dia Especial: 05/07/2024 💍
+    </div>
+  </section>
+
+  <footer>
+    Feito com amor ❤️
+  </footer>
+
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let slides = document.getElementsByClassName("slide");
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1; }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 3000); // Muda a cada 3 segundos
+    }
+  </script>
+</body>
+</html>
